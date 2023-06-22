@@ -28,7 +28,7 @@ public class Questions {//We make this class for sit a mani of a questions and c
     };
 
 
-    public static String[] getAllans(){
+    public static String[] getAllans(){//use it i assi1
         String[] a=new String[questions.length];
         for(int i=0;i<=questions.length-1;i++){
             a[i]=questions[i].getAnswer();
@@ -40,15 +40,8 @@ public class Questions {//We make this class for sit a mani of a questions and c
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     public String getAnswer() {
         return answer;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
 }

@@ -42,23 +42,6 @@ public class HolderAdapter
     @Override
     public void onBindViewHolder(ViewHolder holder,  int position) {
 
-//        CardView cardView = holder.cardView;
-//        TextView txt = (TextView)cardView.findViewById(R.id.EQtext);
-//        txt.setText(x[position] + " " + operation[position] + " " + y[position] + " = ?");
-//        RadioGroup radioGroup = (RadioGroup)cardView.findViewById(R.id.group);
-//        radioGroup.check(-1);
-//        TextView r1 = (TextView)cardView.findViewById(R.id.R1);
-//        r1.setText("" + optionOne[position]);
-//        TextView r2 = (TextView)cardView.findViewById(R.id.R2);
-//        r2.setText("" + optionTwo[position]);
-//        TextView r3 = (TextView)cardView.findViewById(R.id.R3);
-//        r3.setText("" + optionThree[position]);
-//        TextView r4 = (TextView)cardView.findViewById(R.id.R4);
-//        r4.setText("" + optionFour[position]);
-//        Button btn = (Button)cardView.findViewById(R.id.check);
-//        btn.setTag(position);
-
-
         CardView cardView = holder.cardView;
         TextView txt = (TextView)cardView.findViewById(R.id.QA);
         txt.setText(question[position]);
@@ -68,8 +51,6 @@ public class HolderAdapter
         ArrayAdapter<String> adapterd= new ArrayAdapter<String>(cardView.getContext(),android.R.layout.simple_spinner_item,answer);
         adapterd.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
          spinner.setAdapter(adapterd);
-
-
 
     }
 
